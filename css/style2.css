@@ -1,0 +1,304 @@
+@media (max-width: 600px) {
+    section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.stars {
+    background: url(https://wallpaperstream.com/wallpapers/full/night-sky/Crescent-Moon-and-Stars.jpg);
+}
+
+.niag {
+    background: url(https://www.setaswall.com/wp-content/uploads/2017/09/Park-Wallpaper-50-2130x1200.jpg);
+}
+
+.parlia {
+    background: url(https://smhttp-ssl-46488.nexcesscdn.net/media/catalog/product/cache/1/small_image/9df78eab33525d08d6e5fb8d27136e95/n/l/nlxl-pb-concrete-con02.jpg);
+}
+
+.fort {
+    background: url(https://cdn.shopify.com/s/files/1/0638/4395/products/PHE-10_1024x1024.jpg?v=1543319070);
+}
+
+.rafting {
+    background: url(https://images.unsplash.com/photo-1528306752279-896eace94b08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+}
+
+.c_bg {
+    background: url(https://www.wallpaperup.com/uploads/wallpapers/2013/04/10/73718/db3300f5b82a58586d25507a3ecfe20f-700.jpg);
+}
+
+.algo_bg {
+    background: url(http://myzeroone.com/myzeroone/18164-free-desktop-wallpaper-autumn-leaves.jpg);
+}
+
+.contact{
+    background: url(https://images-na.ssl-images-amazon.com/images/I/81Mxk55C3SL._SX425_.jpg);
+}
+
+.bruce{
+    background: url(https://images.unsplash.com/photo-1503756234508-e32369269deb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+}
+
+.hamilton{
+    background: url(http://s1.1zoom.me/b5150/105/Birds_Pelicans_Waterfalls_522278_3840x2160.jpg);
+}
+
+/* Style the header */
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    background-image: url(http://webmadewell.com/wp-content/uploads/2018/01/img-bg-sample-parallax-header.jpg);
+    background-position: 20%;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    width: 100%;
+    display: inline-block;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #333;
+    overflow: hidden;
+    border-radius: 0 0 85% 85% / 30%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    animation: move 5s infinite;
+}
+
+header>h4 {
+    margin-top: 0px;
+    clear: both;
+}
+
+header>h1 {
+    margin-bottom: 3px;
+    clear: both;
+}
+
+div.polaroid {
+    width: 100% auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    display: inline-block;
+    margin-bottom: 9px;
+    padding: 2px;
+    margin-top: 20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article>p::first-letter {
+    font-size: 40pt;
+}
+
+blockquote::first-letter {
+    font-size: 15pt;
+}
+
+header form {
+    position: relative;
+    left: 35%;
+}
+
+header img {
+    float: left;
+    position: relative;
+    left: 0%;
+    border: 2px solid #345116;
+    width: 200px;
+    height: 100px;
+    padding: 3px;
+}
+
+/* Container for flexboxes */
+
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+article a:hover {
+    color: #cc5bb3;
+    font-size: 110%;
+}
+
+/* Style the navigation menu */
+
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #21211e;
+    padding: 10px;
+    border: 3px solid black;
+    border-bottom: 0px solid black;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #c1c0b4;
+    color: #66581f;
+    font-size: 120%;
+    border-radius: 20% 20% 20% 20%;
+}
+
+/* Style the list inside the menu */
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+nav li {
+    padding: 5px;
+    font-style: italic;
+    background-color: #42413c;
+    margin-bottom: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Style the content */
+
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-top: 1px solid #c9cdd3;
+}
+
+article>h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Garamond';
+    font-weight: lighter;
+    margin: 0px;
+    padding-top: 15px;
+    text-shadow: 1px 1px 1px #333;
+    width: 100%;
+}
+
+/* Style the footer */
+
+footer {
+    background:url(http://pngimg.com/uploads/mountain/mountain_PNG20.png);
+    background-position-y: 75%;
+    width: 100%;
+    padding: 10px;
+    margin-top: 0px;
+    text-align: center;
+    color: white;
+    border-radius: 30% 30% 0 0;
+}
+
+footer a {
+    color: #ffe493;
+}
+
+nav li a {
+    color: #fcf1bf;
+}
+
+#back_button {
+    float: left;
+    height: 50;
+    width: 50;
+}
+
+#next_button {
+    float: right;
+    height: 50;
+    width: 50;
+}
+
+h1 a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 48px;
+    color: #333;
+}
+
+article>h3:nth-of-type(odd) {
+    background: #282825;
+    color: white;
+    font-weight: lighter;
+}
+
+#pin {
+    float: right;
+    width: 150px;
+    height: 150px;
+    margin-right: 270px;
+}
+
+@keyframes move {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(.99)
+    }
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    left: 20%;
+    margin-top: 20px;
+}
+
+.gmap_canvas {
+    border: 2px solid black;
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 600px;
+}
+
+.algo {
+    margin-left: 50px;
+}
+
+.cav_tab td {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 5px;
+    padding: 50px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.icons{
+    margin-top:1000px; 
+    border: 1px solid #42413c;
+  }
+
+footer>p:nth-of-type(2){
+    margin: 0;
+    margin-left: 1500px; 
+    color: #fcf1bf;
+}
+  
