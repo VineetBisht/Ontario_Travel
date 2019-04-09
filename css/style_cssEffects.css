@@ -1,0 +1,50 @@
+#content-item {
+	width: 100%;
+	overflow: hidden;
+	margin: 30px 0;
+}
+#content-item .item{
+	height: 50vh;
+	overflow: hidden;
+	cursor: pointer;
+	background: #000;
+  margin-top:30px;
+}
+#content-item .item img {
+	height:100%;
+	width: 100%;
+	opacity: .66;
+}
+#content-item .item:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity:1;
+}
+#content-item .item .caption {
+	position: absolute;
+	bottom: -50px;
+	margin-left: 10px;
+	opacity: 0;
+	-webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+#content-item .item .caption h2 {
+	margin: 0;
+	color: #fff;
+	font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+}
+#content-item .item .caption p {
+	margin: 0;
+	color: #fff;
+	font-size: 1em;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+}
+#content-item .item:hover .caption {
+	opacity: 1;
+	bottom: 10px;
+}
