@@ -209,6 +209,15 @@ footer>p:nth-of-type(2){
   color: #fcf1bf;
 }
 
+.container p{
+  color:#414956;
+  font-size: 110%;
+  }
+
+article a:hover p{
+  color:#a05f4e;
+  font-size: 110%;
+  }
 img, img.scale-with-grid { outline: 0; max-width: 100%; }
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
 
