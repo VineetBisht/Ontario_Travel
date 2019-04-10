@@ -11,6 +11,11 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 .stars {
@@ -41,15 +46,15 @@ body {
     background: url(http://myzeroone.com/myzeroone/18164-free-desktop-wallpaper-autumn-leaves.jpg);
 }
 
-.contact{
+.contact {
     background: url(https://images-na.ssl-images-amazon.com/images/I/81Mxk55C3SL._SX425_.jpg);
 }
 
-.bruce{
+.bruce {
     background: url(https://images.unsplash.com/photo-1503756234508-e32369269deb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
 }
 
-.hamilton{
+.hamilton {
     background: url(http://s1.1zoom.me/b5150/105/Birds_Pelicans_Waterfalls_522278_3840x2160.jpg);
 }
 
@@ -204,7 +209,7 @@ article>h1 {
 /* Style the footer */
 
 footer {
-    background:url(http://pngimg.com/uploads/mountain/mountain_PNG20.png);
+    background: url(http://pngimg.com/uploads/mountain/mountain_PNG20.png);
     background-position-y: 75%;
     width: 100%;
     padding: 10px;
@@ -216,7 +221,7 @@ footer {
 
 footer a {
     color: #ffe493;
- }
+}
 
 nav li a {
     color: #fcf1bf;
@@ -292,14 +297,85 @@ article>h3:nth-of-type(odd) {
     text-align: center;
 }
 
-.icons{
-    margin-top:1000px; 
+.icons {
+    margin-top: 1000px;
     border: 1px solid #42413c;
-  }
+}
 
-footer>p:nth-of-type(2){
+footer>p:nth-of-type(2) {
     margin: 0;
-    margin-left: 1500px; 
+    margin-left: 1500px;
     color: #fcf1bf;
 }
- 
+
+#Comment_Section textarea {
+    text-align: left;
+    text-justify: auto;
+    margin: 10px;
+    width: 400px;
+    height: 150px;
+}
+
+#Comment_Section input {
+    width: 90px;
+    height: 45px;
+    background: #42413c;
+    color: white;
+    border: #dbb882 2px solid;
+    margin: 3px;
+    text-align: center;
+}
+
+#Comment_Section input:hover {
+    background: #e7dfb3;
+    color: rgb(54, 39, 39);
+    cursor: hand;
+}
+
+#comment{
+    padding: 5px;
+    display: block;
+    overflow: hidden;
+    background: #FFF;
+    border-bottom:1px solid grey; 
+}
+#comment>img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    margin-top:0px; 
+    margin-bottom: 0px;
+    border-radius: 50%;
+    clear: both;
+}
+
+#comment>p{
+  margin-top: 30px;
+ }
+#comment>h4{
+    float: left;
+    margin: 0px;
+    margin-left: 15px;
+    color: #447ba8;
+}
+
+#comment>h5{
+    color: red;
+    float: right;
+    margin: 0px;
+    margin-right: 10px;
+}
+
+#comments{
+    border:1px grey solid;
+}
+
+#emptyC{
+    border: 1px grey solid;
+    background: white;
+}
+
+#emptyC>p{
+    margin:10px;
+}
