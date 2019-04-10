@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Niagara Falls</title>
     <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css">
 </head>
 
 <body class="niag">
@@ -40,7 +41,28 @@
             </div>
 
             <h1>Niagara Falls</h1>
-            <div class="polaroid"> <img src="images/niagara.jpg"></div>
+            <div class="slideshow-container">
+                <div class="polaroid">
+                    <div class="mySlides fade">
+                        <img src="images/niagara.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/niagara2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/niagara3.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
             <p>Niagara Falls is an exciting, year-round destination with no shortage of things to do. Aside from the
                 obvious draw that calls to visitors from around the world, you’ll
                 find authentic attractions, fascinating heritage sites, pristine natural spaces and locally sourced
@@ -154,6 +176,7 @@
         <a href="https://github.com/VineetBisht/Ontario_Travel">GitHub Source</a>
         <p><a href="#here"><u>Back to top</u></a></p>
     </footer>
+    <script src="js/slideshow.js"></script>
 </body>
 
 </html>

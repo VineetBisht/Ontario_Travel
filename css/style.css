@@ -120,6 +120,7 @@ nav {
   padding: 10px;
   border: 1px solid black;
   border-bottom: 0px solid black;
+  max-width: 300px;
 }
 
 nav li a {
@@ -210,6 +211,7 @@ footer>p:nth-of-type(2){
 }
 
 .container p{
+  color: black;
   font-size: 110%;
   }
 
@@ -221,6 +223,7 @@ article a:hover p{
   color: #FFF;
   font-size: 110%;
   }
+
 img, img.scale-with-grid { outline: 0; max-width: 100%; }
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
 
