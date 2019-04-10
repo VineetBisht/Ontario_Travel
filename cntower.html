@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CN Tower</title>
     <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css">
 </head>
 
 <body class="stars">
@@ -40,7 +41,27 @@
             </div>
 
             <h1>CN Tower</h1>
-            <div class="polaroid algo"> <img src="images/cn1.jpg" height="600" width="1250"></div>
+            <div class="slideshow-container">
+                <div class="polaroid">
+                    <div class="mySlides fade">
+                        <img src="images/cn1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/cn_tower2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/cntower3.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
             <blockquote>
                 <p>EdgeWalk is CN Tower’s most thrilling attraction in its history, and the first of its kind in North
                     America. It is the world’s highest full circle hands-free walk
@@ -167,8 +188,9 @@
             All rights Reserved.</p>
         <a href="contact.html">Contact Us</a><br>
         <a href="https://github.com/VineetBisht/Ontario_Travel">GitHub Source</a>
-		<p><a href="#here"><u>Back to top</u></a></p>
+        <p><a href="#here"><u>Back to top</u></a></p>
     </footer>
+    <script src="js/slideshow.js"></script>
 </body>
 
 </html>

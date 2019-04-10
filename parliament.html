@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Parliament Hills</title>
     <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css">
 </head>
 
 <body class="parlia">
@@ -39,7 +40,27 @@
             </div>
 
             <h1>Parliament Hills</h1>
-            <div class="polaroid algo"> <img src="images/parlia.jpg" height="600" width="1300"></div>
+            <div class="slideshow-container">
+                <div class="polaroid">
+                    <div class="mySlides fade">
+                        <img src="images/parlia.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/p2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/p3.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
             <blockquote>Parliament Hill is one of Canada’s most iconic sites and a must-see when visiting Canada’s
                 capital. The
                 historic, neo-Gothic Parliament Buildings stand tall on a hill overlooking the majestic Ottawa River in
@@ -158,6 +179,7 @@
         <a href="https://github.com/VineetBisht/Ontario_Travel">GitHub Source</a>
         <p><a href="#here"><u>Back to top</u></a></p>
     </footer>
+    <script src="js/slideshow.js"></script>
 </body>
 
 </html>

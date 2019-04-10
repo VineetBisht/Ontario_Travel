@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Algonquin Park</title>
     <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css">
 </head>
 
 <body class="algo_bg">
@@ -39,7 +40,27 @@
             </div>
 
             <h1>Algonquin Park</h1>
-            <div class="polaroid algo"> <img src="images/algo.jpg" height="600" width="1250"></div>
+            <div class="slideshow-container">
+                <div class="polaroid">
+                    <div class="mySlides fade">
+                        <img src="images/algo.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/algo2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/algo3.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
             <blockquote>
                 Established in 1893, Algonquin Park is the oldest park in all of Canada, but with age only comes more
                 matured beauty. The world renowned park is made up of 7,653 square kilometers of incredible diverse and
@@ -147,6 +168,7 @@
         <a href="https://github.com/VineetBisht/Ontario_Travel">GitHub Source</a>
 		<p><a href="#here"><u>Back to top</u></a></p>
     </footer>
+    <script src="js/slideshow.js"></script>
 </body>
 
 </html>
