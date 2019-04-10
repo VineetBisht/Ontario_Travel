@@ -245,7 +245,7 @@ h1 a {
     color: #333;
 }
 
-article>h3:nth-of-type(odd) {
+article>h3:nth-of-type(odd),article>h3:last-of-type {
     background: #282825;
     color: white;
     font-weight: lighter;
@@ -360,7 +360,7 @@ footer>p:nth-of-type(2) {
     color: #447ba8;
 }
 
-#comment>h5{
+#comment>h5,#c_e{
     color: red;
     float: right;
     margin: 0px;
