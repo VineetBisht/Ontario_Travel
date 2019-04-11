@@ -367,6 +367,10 @@ span.psw {
   cursor: pointer;
 }
 
+#success{
+  color: #ffe493;
+}
+
 /* Add Zoom Animation */
 .animate {
   -webkit-animation: animatezoom 0.6s;
@@ -398,4 +402,5 @@ span.psw {
      width: 100%;
   }
 }
+
 
