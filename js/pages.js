@@ -107,17 +107,27 @@ function login() {              // Function to check login
 }
 
 function logout() {             // logout just clears the sessionStorage variables
+    var sure=confirm("Are you sure?");
+    if(sure==true){
     sessionStorage.clear();
     location.reload();
+    }
 }
 
 window.onclick = function (event) { // onclick events
-    if (event.target === comm) {
-        let text = $("text").value;
-        text=text.trim();
+    let text = $("text").value;
+    text=text.trim();
+    
+     if (event.target === comm) {
+
+        if(sessionStorage.getItem("uname")==null){
+            alert("You must login first");
+            return false;
+        }
+
         if (!text || 0 === text.length){
             $("c_e").innerHTML = "<p>Comment cannot be empty<p>";
-            return;
+            return false;
         }
         $("c_e").innerHTML = "";
         if (emptyC === true)

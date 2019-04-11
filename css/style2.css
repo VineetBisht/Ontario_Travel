@@ -18,6 +18,7 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    min-width: 800px;
 }
 
 .stars {
@@ -553,7 +554,7 @@ span.psw {
 #out {
     position: absolute;
     right: 5%;
-    top: 18%;
+    top: 20%;
     display: inline;
     background: white;
     font-style: italic;
