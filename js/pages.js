@@ -128,17 +128,23 @@ window.onclick = function (event) {
 }
 
 window.onload = function () {
-    let com = document.querySelector("#comments");
-    if (com.childNodes.length == 0) {
-        $("comments").innerHTML = "<div id=\"emptyC\"><p>😀 Why don't you be the first to comment</p></div>";
-        emptyC = true;
-    }
-    console.log("here");
-    $("register").onclick = regisTer;
+   $("register").onclick = regisTer;
+
+    console.log(sessionStorage.getItem("verified") == "true");
+
     if (sessionStorage.getItem("verified") == "true") {
         $("logButton").innerHTML = "<h4>Hello, " + sessionStorage.getItem("uname") + "</h4>";
         $("logButton").innerHTML += "<button id=\"out\" onclick=\"logout();\">Logout</button>";
     }
+
+    let com = document.querySelector("#comments");
+    
+    if (com.childNodes.length == 0) {
+        $("comments").innerHTML = "<div id=\"emptyC\"><p>😀 Why don't you be the first to comment</p></div>";
+        emptyC = true;
+    }
+   
+   
 }
 
 
