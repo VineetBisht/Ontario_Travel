@@ -1,3 +1,5 @@
+/*------------------------ CSS for all other pages. A lot of copied elements from the index css page(style.css)----------------------------*/
+
 @media (max-width: 600px) {
     section {
         -webkit-flex-direction: column;
@@ -311,6 +313,7 @@ footer>p:nth-of-type(2) {
 #Comment_Section textarea {
     text-align: left;
     text-justify: auto;
+    font-size: 120%;
     margin: 10px;
     width: 400px;
     height: 150px;
@@ -356,6 +359,7 @@ footer>p:nth-of-type(2) {
 }
 
 #comment>h4 {
+    font-family: 'Pacifico', Helvetica, sans-serif;
     float: left;
     margin: 0px;
     margin-left: 15px;
@@ -537,10 +541,10 @@ span.psw {
 #logButton>h4 {
     float: right;
     display: inline;
-    font-family: serif;
-    font-style: italic;
-    color: #f09b62;
-    font-size: 70%;
+    font-family: 'Pacifico', Helvetica, sans-serif;
+    font-size: 80%;
+    color: #315c48;
+    text-shadow: 7px 7px 0px rgba(0, 0, 0, 0.05);
     margin: 0px;
     margin-right: 20px;
     width: 200px;
@@ -556,7 +560,7 @@ span.psw {
     text-shadow: #000;
     font-weight: 600;
     color: #42413c;
-    border: #dbb882 2px solid;
+    border: #315c48 2px solid;
     margin: 3px;
 }
 

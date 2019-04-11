@@ -1,40 +1,44 @@
-/*
-    $("comments").innerHTML="<div id=\"comment\"><h4>Name:</h4><h5>Time</h5><img src=\"images/cavatar.png\"><p>Comment</p></div>";
-*/
+/*--------------------------------Variable declaration----------------------------------*/
 var modal = document.getElementById('id01');
 var modal2 = document.getElementById('id02');
-var users = [{
-    "fname": "Vineet",
-    "lname": "Singh",
-    "email": "vineetbisht2013@gmail.com",
-    "pass": "root"
-},
-{
-    "fname": "user",
-    "lname": "temp",
-    "email": "root",
-    "pass": "toor"
-}
-];
 var comm = document.getElementById("comm")
+var emptyC = false;
+
 var $ = function (id) {
     return document.getElementById(id)
 }
-var emptyC = false;
 
-function getBool(pre) {
-    return localStorage.getItem(pre) == "true" ? true : false;
+var users = [{      // Hard-Coded login info.
+    "fname": "Vineet",
+    "lname": "Singh",
+    "email": "vineetbisht2013@gmail.com",
+    "pass": "admin"
+},{
+    "fname": "Shravani",
+    "lname": "temp",
+    "email": "root",
+    "pass": "admin"
+},{
+    "fname": "Vinisha",
+    "lname": "temp",
+    "email": "root",
+    "pass": "admin"
+},{
+    "fname": "Samuel",
+    "lname": "temp",
+    "email": "root",
+    "pass": "admin"
+},{
+    "fname": "Guest",
+    "lname": "temp",
+    "email": "root",
+    "pass": "Guest"
 }
+];
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------Functions declaration----------------------------------*/
 
-function wait(ms) {
-    var start = new Date().getTime();
-    var end = start;
-    while (end < start + ms) {
-        end = new Date().getTime();
-    }
-}
-
-var regisTer = function () {
+var regisTer = function () {        // Form validation check function
     var psw1 = $("psw1").value;
     var psw2 = $("psw2").value;
 
@@ -81,14 +85,14 @@ var regisTer = function () {
     }
 }
 
-function login() {
+function login() {              // Function to check login
     let temp_u = $("uname").value;
     let temp_psw = $("psw").value;
     for (let e of users) {
-        if (e.email == temp_u && e.pass == temp_psw) {
+        if ( e.fname.toUpperCase() == temp_u.toUpperCase() && e.pass.toUpperCase() == temp_psw.toUpperCase()) {
             sessionStorage.setItem("verified", "true");
             sessionStorage.setItem("uname", e.fname);
-            console.log(e.email + "+" + temp_u);
+            console.log(e.fname + "+" + temp_u);
             break;
         }
     };
@@ -102,12 +106,12 @@ function login() {
     }
 }
 
-function logout() {
+function logout() {             // logout just clears the sessionStorage variables
     sessionStorage.clear();
     location.reload();
 }
 
-window.onclick = function (event) {
+window.onclick = function (event) { // onclick events
     if (event.target === comm) {
         let text = $("text").value;
         text=text.trim();
@@ -127,24 +131,27 @@ window.onclick = function (event) {
     }
 }
 
-window.onload = function () {
+window.onload = function () {       // onload events
    $("register").onclick = regisTer;
-
-    console.log(sessionStorage.getItem("verified") == "true");
-
-    if (sessionStorage.getItem("verified") == "true") {
-        $("logButton").innerHTML = "<h4>Hello, " + sessionStorage.getItem("uname") + "</h4>";
-        $("logButton").innerHTML += "<button id=\"out\" onclick=\"logout();\">Logout</button>";
-    }
 
     let com = document.querySelector("#comments");
     
     if (com.childNodes.length == 0) {
         $("comments").innerHTML = "<div id=\"emptyC\"><p>😀 Why don't you be the first to comment</p></div>";
         emptyC = true;
-    }
-   
-   
+    }   
 }
+
+document.onreadystatechange = function(e)
+{
+    if (document.readyState === 'complete')
+    {
+        //dom is ready, window.onload fires later
+        if (sessionStorage.getItem("verified") == "true") {
+            $("logButton").innerHTML = "<h4>Hello, " + sessionStorage.getItem("uname") + "</h4>";
+            $("logButton").innerHTML += "<button id=\"out\" onclick=\"logout();\">Logout</button>";
+        }    
+    }
+};
 
 

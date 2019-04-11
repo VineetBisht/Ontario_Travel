@@ -1,3 +1,4 @@
+//-------------------------------------Just contains enough for the slideshow on each page to work---------------------------------
 var slideIndex = 0;
 showSlides();
 

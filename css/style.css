@@ -1,3 +1,5 @@
+/* ------------------------------------------- CSS for the index page ---------------------------------------------------- */
+
 @media (max-width: 600px) {
   section {
     -webkit-flex-direction: column;
@@ -396,10 +398,10 @@ span.psw {
 #logButton>h4 {
   float: right;
   display: inline;
-  font-family: serif;
-  font-style: italic;
-  color: #f09b62;
-  font-size: 70%;
+  font-family: 'Pacifico', Helvetica, sans-serif;
+  font-size: 80%;
+  color: #315c48;
+  text-shadow: 7px 7px 0px rgba(0, 0, 0, 0.05);
   margin: 0px;
   margin-right: 20px;
   width: 200px;
@@ -415,7 +417,7 @@ span.psw {
   text-shadow: #000;
   font-weight: 600;
   color: #42413c;
-  border: #dbb882 2px solid;
+  border: #315c48 2px solid;
   margin: 3px;
 }
 
