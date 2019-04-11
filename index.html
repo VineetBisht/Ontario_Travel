@@ -11,8 +11,8 @@
 
 <body class="ind">
 	<header>
-		<img src="images/websitelogo.gif" alt="logo">
-		<div id="logButton">
+			<img src="images/websitelogo.gif" alt="logo">
+			<div id="logButton">
 			<button onclick="document.getElementById('id02').style.display='block'">Sign Up</button>
 			<button onclick="document.getElementById('id01').style.display='block'">Login</button>
 		</div>
@@ -217,7 +217,7 @@
 								<h3>7.Bonnechere Caves</h3>
 								<div class="col-md-4">
 									<div class="item">
-										<img src="images/caves.jpg" width="1400" height="650">
+										<img src="images/caves.jpg" >
 										<div class="caption">
 											<h2>consectetur adipisicing elit</h2>
 											<p>sed do eiusmod</p>
@@ -240,7 +240,7 @@
 								<h3>8.Bruce Peninsula</h3>
 								<div class="col-md-4">
 									<div class="item">
-										<img src="http://www.andrewmorse.ca/wp-content/uploads/2017/07/Bruce-Sunset-2017-small.jpg" width=1400 height=650>
+										<img src="http://www.andrewmorse.ca/wp-content/uploads/2017/07/Bruce-Sunset-2017-small.jpg" >
 										<div class="caption">
 											<h2>consectetur adipisicing elit</h2>
 											<p>sed do eiusmod</p>
@@ -262,8 +262,7 @@
 								<h3>9. Hamilton Waterfalls</h3>
 								<div class="col-md-4">
 									<div class="item">
-										<img src="https://hdfreewallpaper.net/wp-content/uploads/2015/10/nice-hd-wallpapers-free-for-desktop.jpg"
-										 height=650>
+										<img src="https://hdfreewallpaper.net/wp-content/uploads/2015/10/nice-hd-wallpapers-free-for-desktop.jpg">
 										<div class="caption">
 											<h2>consectetur adipisicing elit</h2>
 											<p>sed do eiusmod</p>
@@ -289,7 +288,7 @@
 								<h3>10.BAPS Shri Swaminarayan Mandir</h3>
 								<div class="col-md-4">
 									<div class="item">
-										<img src="http://londonmandir.baps.org/images/gallery/mandir-moods/02mandir-moods.jpg" width="1300" height="800">
+										<img src="http://londonmandir.baps.org/images/gallery/mandir-moods/02mandir-moods.jpg">
 										<div class="caption">
 											<h2>consectetur adipisicing elit</h2>
 											<p>sed do eiusmod</p>
@@ -333,7 +332,7 @@
 				<label for="psw"><b>Password</b></label>
 				<input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
-				<button type="submit" onclick="login()" data-dismiss="modal">Login</button>
+				<button type="submit" onclick="login();return false;" data-dismiss="modal">Login</button>
 				<label>
 					<input type="checkbox" checked="checked" name="remember"> Remember me</label>
 				<p id="success"></p>
@@ -374,12 +373,12 @@
 				<input type="password" id="psw2" placeholder="Re-enter Password" name="psw2">
 				<span class="error" id="psw2_error"></span><br>
 
-				<button type="button" id="register" data-dismiss="modal">Register</button>
+				<button type="button" id="register" onclick="register();return false;" data-dismiss="modal">Register</button>
 
 			</div>
 		</form>
 	</div>
-	<script src="js/index.js"></script>
+	<script src="js/pages.js"></script>
 </body>
 
 </html>

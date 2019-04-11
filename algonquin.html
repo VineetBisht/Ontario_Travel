@@ -10,11 +10,14 @@
 
 <body class="algo_bg">
     <header>
-        <a href="index.html" id="here"><img src="images/websitelogo.gif" alt="logo" class="logo"></a>
-        <form action="#"><input type="text" id="search" placeholder="Type keyword to search..."></form>
+            <a href="index.html"><img src="images/websitelogo.gif" alt="logo"></a>
+            <div id="logButton">
+            <button onclick="document.getElementById('id02').style.display='block'">Sign Up</button>
+            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+        </div>
+        <input type="text" id="here" placeholder="Type keyword to search...">
         <h1>Travel Ontario</h1>
         <h4><i>Yours to Discover!!</i></h4>
-
     </header>
     <section>
         <nav>
@@ -177,8 +180,68 @@
         <a href="https://github.com/VineetBisht/Ontario_Travel">GitHub Source</a>
         <p><a href="#here"><u>Back to top</u></a></p>
     </footer>
+    <div id="id01" class="modal">
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/avatar.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="cont">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+                <button type="submit" onclick="login();return false;" data-dismiss="modal">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me</label>
+                <p id="success"></p>
+            </div>
+
+            <div class="cont">
+                <span class="psw">Forgot <a href="#">password?</a></span>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <div id="id02" class="modal">
+
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/avatar.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="cont">
+                <label for="first_name"><b>First Name</b></label>
+                <input type="text" id="first_name" placeholder="Enter First Name" name="first_name">
+                <span class="error" id="first_name_error"></span><br>
+
+                <label for="last_name"><b>Last Name</b></label>
+                <input type="text" id="last_name" placeholder="Enter Last Name" name="last_name">
+                <span class="error" id="last_name_error"></span><br>
+
+                <label for="email"><b>Email</b></label><br>
+                <input type="text" id="email" placeholder="Enter Email" name="email">
+                <span class="error" id="email_error"></span><br>
+
+                <label for="psw1"><b>Password</b></label>
+                <input type="password" id="psw1" placeholder="Enter Password" name="psw1">
+                <span class="error" id="psw1_error"></span><br>
+
+                <label for="psw2"><b>Confirm Password</b></label>
+                <input type="password" id="psw2" placeholder="Re-enter Password" name="psw2">
+                <span class="error" id="psw2_error"></span><br>
+
+                <button type="button" id="register" onclick="register();return false;" data-dismiss="modal">Register</button>
+
+            </div>
+        </form>
+    </div>
     <script src="js/slideshow.js"></script>
     <script src="js/pages.js"></script>
-</body>
+ </body>
 
 </html>
