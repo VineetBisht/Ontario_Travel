@@ -309,10 +309,10 @@ article>h3:nth-of-type(odd), article>h3:last-of-type {
 }
 
 #pin {
-    float: right;
-    width: 150px;
+     width: 150px;
     height: 150px;
-    margin-right: 380px;
+    margin-left: 300px;
+    margin-top: 200px;
 }
 
 @keyframes move {
@@ -325,10 +325,11 @@ article>h3:nth-of-type(odd), article>h3:last-of-type {
 }
 
 .mapouter {
-    position: relative;
+    order:1;
     text-align: right;
     left: 20%;
     margin-top: 20px;
+    margin-right: 400px;
 }
 
 .gmap_canvas {
@@ -683,6 +684,8 @@ span.psw {
 
 #pinning{
     display: flex;  
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 article>iframe{
