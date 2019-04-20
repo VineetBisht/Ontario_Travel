@@ -708,6 +708,7 @@ article>iframe{
 #search>input{
 order:4;
 margin-top: 15px;
+margin-right: 15px;
 max-width: 180px;
 align-self: flex-end;
 }
