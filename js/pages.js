@@ -1,7 +1,7 @@
 /*--------------------------------Variable declaration----------------------------------*/
 var modal = document.getElementById('id01');
 var modal2 = document.getElementById('id02');
-var comm = document.getElementById("comm")
+var comm = document.getElementById("comm");
 var emptyC = false;
 
 var $ = function (id) {
@@ -99,7 +99,7 @@ function login() {              // Function to check login
     if (sessionStorage.getItem("verified") == "true") {
         $("success").innerHTML = "Successfully Verified";
         $("logButton").innerHTML = "<h4>Hello, " + sessionStorage.getItem("uname") + "</h4>";
-        $("logButton").innerHTML += "<button id=\"out\" onclick=\"logout();\">Logout</button>";
+        $("logButton").innerHTML += "<button id=\"out\" onclick=\"logout();\">Logout</button></>";
     }
     else {
         $("success").innerHTML = "Wrong Credentials";
@@ -113,6 +113,14 @@ function logout() {             // logout just clears the sessionStorage variabl
     location.reload();
     }
 }
+
+function openNav() {
+    document.querySelector("nav").style.width = "250px";
+ }
+
+function closeNav() {
+  document.querySelector("nav").style.width = "0";
+ }
 
 window.onclick = function (event) { // onclick events
     let text = $("text").value;
@@ -135,8 +143,7 @@ window.onclick = function (event) { // onclick events
         else
             $("comments").innerHTML += "<div id=\"comment\"><h4>"+sessionStorage.getItem("uname")+":</h4><h5>" + new Date().toLocaleTimeString() + "</h5><img src=\"images/cavatar.png\"><p>" + text + "</p></div>";
         emptyC = false;
-    }
-    if (event.target == modal || event.target == modal2) {
+    }else if (event.target == modal || event.target == modal2) {
         modal.style.display = "none";
     }
 }

@@ -63,33 +63,45 @@ body {
 
 /* Style the header */
 
-header {
+#header {
+    display: flex;
+    padding: 0px;
+    align-items: flex-start;
+    justify-content: space-between;
+    z-index: 1;
+    position: fixed;
     font-family: 'Times New Roman', Times, serif;
-    align-items: center;
     background-image: url(http://webmadewell.com/wp-content/uploads/2018/01/img-bg-sample-parallax-header.jpg);
     background-position: 20%;
-    padding: 10px;
     text-align: center;
     font-size: 35px;
     width: 100%;
-    display: inline-block;
     color: #FFF;
     text-shadow: 1px 1px 1px #333;
-    overflow: hidden;
-    border-radius: 0 0 85% 85% / 30%;
     -webkit-background-size: cover;
     background-size: cover;
-    animation: move 5s infinite;
+    overflow: hidden;
 }
 
-header>h4 {
-    margin-top: 0px;
-    clear: both;
+#heading {
+    display: flex;
+    flex-direction: column;
 }
 
-header>h1 {
-    margin-bottom: 3px;
-    clear: both;
+#heading h1 {
+    margin: 0px;
+    font-size: 140%;
+}
+
+#heading h4 {
+    margin: 0px;
+    font-size: 90%;
+}
+
+#header_right {
+    order: 4;
+    display: flex;
+    flex-direction: row;
 }
 
 div.polaroid {
@@ -104,9 +116,10 @@ div.polaroid {
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+ }
+
+article {
+    margin-top: 93px;
 }
 
 article>p::first-letter {
@@ -117,19 +130,18 @@ blockquote::first-letter {
     font-size: 15pt;
 }
 
-header form {
+#header form {
     position: relative;
     left: 35%;
 }
 
-header img {
-    float: left;
-    position: relative;
+#header a img {
     left: 0%;
     border: 2px solid #345116;
-    width: 200px;
-    height: 100px;
-    padding: 3px;
+    width: 160px;
+    height: 80px;
+    padding: 2px;
+    margin: 5px;
 }
 
 /* Container for flexboxes */
@@ -142,19 +154,57 @@ section {
 article a:hover {
     color: #cc5bb3;
     font-size: 110%;
+    transition: .2s;
 }
 
 /* Style the navigation menu */
 
 nav {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
     background: #21211e;
-    padding: 10px;
+    padding: 0px;
     border: 3px solid black;
     border-bottom: 0px solid black;
+    width: 0px;
     max-width: 300px;
+    margin: 0px;
+    margin-top: 93px;
+    position: fixed;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 26px;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav>a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+nav>a:hover {
+    color: #f1f1f1;
+}
+
+#nav_icon {
+    position: fixed;
+    margin-top: 90px;
+    padding: 20px;
+    justify-content: end;
+}
+
+#nav_icon {
+    height: 80px;
+    width: 80px;
 }
 
 nav li a {
@@ -170,6 +220,7 @@ nav li a:hover {
     color: #66581f;
     font-size: 120%;
     border-radius: 20% 20% 20% 20%;
+    transition: .2s;
 }
 
 /* Style the list inside the menu */
@@ -177,6 +228,7 @@ nav li a:hover {
 nav ul {
     list-style-type: none;
     padding-left: 0px;
+    margin-top: 30px;
 }
 
 nav li {
@@ -234,12 +286,14 @@ nav li a {
     float: left;
     height: 50;
     width: 50;
+    margin-top: 80px;
 }
 
 #next_button {
     float: right;
     height: 50;
     width: 50;
+    margin-top: 80px;
 }
 
 h1 a {
@@ -258,7 +312,7 @@ article>h3:nth-of-type(odd), article>h3:last-of-type {
     float: right;
     width: 150px;
     height: 150px;
-    margin-right: 270px;
+    margin-right: 380px;
 }
 
 @keyframes move {
@@ -334,6 +388,7 @@ footer>p:nth-of-type(2) {
     background: #e7dfb3;
     color: rgb(54, 39, 39);
     cursor: hand;
+    transition: .2s;
 }
 
 #comment {
@@ -356,7 +411,7 @@ footer>p:nth-of-type(2) {
 }
 
 #comment>p {
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 #comment>h4 {
@@ -392,20 +447,20 @@ img, img.scale-with-grid {
     max-width: 100%;
 }
 
-header button {
+#header button {
     float: right;
     width: 90px;
     height: 45px;
     background: #42413c;
     color: white;
     border: #dbb882 2px solid;
-    margin: 3px;
 }
 
-header button:hover {
+#header button:hover {
     background: #e7dfb3;
     color: rgb(54, 39, 39);
     cursor: hand;
+    transition: .2s;
 }
 
 #id01, #id02 {
@@ -539,60 +594,37 @@ span.psw {
     color: #ffe493;
 }
 
+#logButton {
+    order: 4;
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row;
+}
+
 #logButton>h4 {
-    float: right;
-    display: inline;
     font-family: 'Pacifico', Helvetica, sans-serif;
     font-size: 80%;
-    color: #315c48;
-    text-shadow: 7px 7px 0px rgba(0, 0, 0, 0.05);
+    color: #0a3d25;
+    text-shadow: .5px .5px 0px white;
     margin: 0px;
-    margin-right: 20px;
+    margin-right: 25px;
+    margin-top:10px;
     width: 200px;
 }
 
 #out {
-    position: absolute;
-    right: 5%;
-    top: 20%;
-    display: inline;
     background: white;
     font-style: italic;
-    text-shadow: #000;
+    margin-right: 30px;
+    margin-top:10px;
     font-weight: 600;
-    color: #42413c;
-    border: #315c48 2px solid;
-    margin: 3px;
-}
+   }
 
 /* Add Zoom Animation */
-
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s;
-}
 
 .error {
     color: red;
     font-size: 80%;
-}
-
-@-webkit-keyframes animatezoom {
-    from {
-        -webkit-transform: scale(0)
-    }
-    to {
-        -webkit-transform: scale(1)
-    }
-}
-
-@keyframes animatezoom {
-    from {
-        transform: scale(0)
-    }
-    to {
-        transform: scale(1)
-    }
 }
 
 /* Change styles for span and cancel button on extra small screens */
@@ -605,4 +637,77 @@ span.psw {
     .cancelbtn {
         width: 100%;
     }
+}
+
+#map_drop {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+#map_drop>p {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 70%;
+    color: #f99dba;
+}
+
+#map_drop>img {
+    height: 50px;
+    width: 50px;
+    border: none;
+    margin: 0px;
+    margin-right: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    min-width: 160px;
+    right: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 0px;
+    z-index: 1;
+}
+
+#map_drop:hover .dropdown-content {
+    display: flex;
+    cursor: auto;
+}
+
+#pinning{
+    display: flex;  
+}
+
+article>iframe{
+    margin: 20px;
+    margin-left: 20%;   
+}
+
+#header_log{
+    display: flex;
+    flex-direction: row;
+}
+
+#header_log>h4{
+    padding:0px;
+    margin:0px;
+}
+
+#search{
+    display: flex;
+    flex-direction: column;
+}
+
+#search>input{
+order:4;
+margin-top: 15px;
+max-width: 180px;
+align-self: flex-end;
 }

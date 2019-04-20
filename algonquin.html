@@ -6,23 +6,50 @@
     <title>Algonquin Park</title>
     <link rel="stylesheet" type="text/css" href="css/style2.css">
     <link rel="stylesheet" type="text/css" href="css/slideshow.css">
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'> <!-- Font import: Just for name-->
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <!-- Font import: Just for name-->
 
 </head>
 
 <body class="algo_bg">
-    <header>
-            <a href="index.html"><img src="images/websitelogo.gif" alt="logo"></a>
-            <div id="logButton">
-            <button onclick="document.getElementById('id02').style.display='block'">Sign Up</button>
-            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+    <div id="header">
+        <a href="index.html"><img src="images/websitelogo.gif" alt="logo"></a>
+        <div id="header_right">
+            <div id="map_drop">
+                <p><u>Map:</u></p>
+                <img src="images/map_icon.png">
+                <div class="dropdown-content">
+                    <img src="images/Ontario.png" onmouseover="openNav()" onmouseout="closeNav()" id="map" usemap="#image-map">
+                    <map name="image-map" onmouseover="openNav()">
+                        <area target="" alt="" title="" href="#" shape="poly" coords="237,438,235,418,243,405,253,408,256,413">
+                        <area alt="" title="" href="#" shape="poly" coords="646,495,630,506,637,521,655,523,671,524" />
+                        <area alt="" title="" href="#" shape="poly" coords="591,527,612,523,630,538,620,549,596,551,589,541" />
+                        <area alt="" title="" href="#" shape="poly" coords="514,541,496,539,479,540,475,553,486,568,507,558" />
+                        <area alt="" title="" href="#" shape="poly" coords="595,623,585,622,579,630,579,636,586,634,592,628" />
+                        <area alt="" title="" href="#" shape="poly" coords="711,519,704,515,688,515,692,525,700,532,706,529" />
+                        <area alt="" title="" href="#" shape="poly" coords="703,534,686,527,672,532,670,543,698,547" />
+                        <area alt="" title="" href="#" shape="poly" coords="565,643,567,654,585,658,587,652,576,644" />
+                        <area alt="" title="" href="mandir.html" shape="poly" coords="584,628,584,616,571,616,565,625,572,632" />
+                    </map>
+                </div>
+            </div>
+            <div id="search">
+                <div id="logButton">
+                    <button onclick="document.getElementById('id02').style.display='block'">Sign Up</button>
+                    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+                </div>
+                <input type="text" id="here" placeholder="Type keyword to search...">
+            </div>
         </div>
-        <input type="text" id="here" placeholder="Type keyword to search...">
-        <h1>Travel Ontario</h1>
-        <h4><i>Yours to Discover!!</i></h4>
-    </header>
+        <div id="heading">
+            <h1>Travel Ontario</h1>
+            <h4><i>Yours to Discover!!</i></h4>
+        </div>
+    </div>
     <section>
+        <span style="cursor:pointer" id="nav_icon" onclick="openNav()"><img src="images/nav_icon.png"></span>
         <nav>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul>
                 <li><a href="Niagara.html">Niagara Falls</a></li>
                 <li><a href="cntower.html">The CN Tower</a></li>
@@ -35,8 +62,6 @@
                 <li><a href="hamilton.html">Hamilton Waterfalls</a></li>
                 <li><a href="mandir.html">BAPS Shri Swaminarayan Mandir</a></li>
             </ul>
-            <img src="http://www.clipartroo.com/images/2/happy-dance-fox-clipart-2552.png" alt="chick" height=150 width=200
-                class="icons">
         </nav>
         <article>
             <div>
@@ -112,7 +137,7 @@
                 pressure.
             </blockquote>
             </main>
-            <div class="polaroid algo"><img src="images/algo_3.jpg" width=1000 height=700></div>
+            <div class="polaroid algo"><img src="images/algo_3.jpg" width=1000 height=700 ></div>
             <h3>Research</h3>
             <blockquote>Algonquin Park has been an important arena for research since the 1930s. Four research
                 facilities exist:
@@ -159,10 +184,14 @@
                             project. Gregory Klages, Research Director.</a></li>
                 </ul>
             </div>
-            <img src="images/pin.png" id="pin">
-            <div class="mapouter">
-                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Algonquin%20park&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com">emojilib.com</a></div>
+            <iframe width="820" height="645" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+            <div id="pinning">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Algonquin%20park&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com">emojilib.com</a></div>
+                </div>
+                <img src="images/pin.png" id="pin">
             </div>
 
             <h3>Comment Section:</h3>
@@ -191,7 +220,8 @@
 
             <div class="cont">
                 <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" id="uname" value="Default: 'Guest' for both" required>
+                <input type="text" placeholder="Enter Username" name="uname" id="uname" value="Default: 'Guest' for both"
+                    required>
 
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
@@ -244,6 +274,6 @@
     </div>
     <script src="js/slideshow.js"></script>
     <script src="js/pages.js"></script>
- </body>
+</body>
 
 </html>
