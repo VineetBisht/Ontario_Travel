@@ -690,7 +690,9 @@ span.psw {
 
 article>iframe{
     margin: 20px;
-    margin-left: 20%;   
+    margin-left: 20%;  
+    height: 650px;
+    width: 850px; 
 }
 
 #header_log{
