@@ -30,16 +30,14 @@ body {
 header {
   font-family: 'Times New Roman', Times, serif;
   align-items: center;
-  background-image: url("http://webmadewell.com/wp-content/uploads/2018/01/img-bg-sample-parallax-header.jpg");
+  background-image: url(https://images6.alphacoders.com/893/893236.jpg);
   background-position: 20%;
   padding: 10px;
   text-align: center;
   font-size: 35px;
   width: 100%;
-  display: inline-block;
   color: #FFF;
   text-shadow: 1px 1px 1px #333;
-  overflow: hidden;
   border-radius: 0 0 85% 85% / 30%;
   -webkit-background-size: cover;
   background-size: cover;
@@ -131,93 +129,81 @@ article a:hover {
   transition: .2s;
 }
 
-/* Style the navigation menu */
+/* Style the ##navigation menu */
 
-nav {
-  background: #21211e;
-  padding: 0px;
-  border: 3px solid black;
-  border-bottom: 0px solid black;
-  width: 0px;
-  max-width: 300px;
-  margin: 0px;
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+}
+
+div.scrollmenu a {
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  color: white;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
   position: fixed;
-  overflow-x: hidden;
-  transition: 0.3s;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-.closebtn {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  font-size: 26px;
-  margin: 0px;
-  padding: 0px;
-}
-
-nav>a {
-  padding: 8px 8px 8px 32px;
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+  display: flex;
+  text-align: left;
+  opacity: .9;
+  background: #21211e;
 }
 
-nav>a:hover {
-  color: #f1f1f1;
-  transition: .2s;
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
 }
 
-#nav_icon {
+.sticky {
   position: fixed;
-  margin-top: 0px;
-  padding: 20px;
-  height: 80px;
-  width: 80px;
-  }
-
-nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-nav li a:hover {
-  background-color: #c1c0b4;
-  color: #66581f;
-  font-size: 120%;
-  border-radius: 20% 20% 20% 20%;
-  transition: .2s;
-}
-
-/* Style the list inside the menu */
-
-nav ul {
-  list-style-type: none;
-  padding-left: 0px;
-  margin-top: 30px;
-}
-
-nav li {
-  padding: 5px;
-  font-style: italic;
-  background-color: #42413c;
-  margin-bottom: 7px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 /* Style the content */
 
 article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
   background-color: #f1f1f1;
-  padding: 10px;
+  padding: 0px;
 }
 
 /* Style the footer */
@@ -237,7 +223,7 @@ footer a {
   color: #ffe493;
 }
 
-nav li a {
+#nav li a {
   color: #fcf1bf;
 }
 
@@ -462,10 +448,11 @@ span.psw {
   margin: 3px;
 }
 
-#out:hover{
+#out:hover {
   background: black;
   color: white;
 }
+
 /* Add Zoom Animation */
 
 .animate {
@@ -500,12 +487,13 @@ span.psw {
 }
 
 .polaroid img {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
+
 .polaroid:hover img {
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }

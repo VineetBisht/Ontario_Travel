@@ -6,6 +6,7 @@
 	<title>Travel Ontario</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/style_cssEffects.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<!-- Font import: Just for name-->
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,700italic' rel='stylesheet' type='text/css'>
@@ -23,23 +24,28 @@
 		<h4><i>Yours to Discover!!</i></h4>
 	</header>
 	<section>
-		<span style="cursor:pointer" id="nav_icon" onclick="openNav()"><img src="images/nav_icon.png"></span>
-		<nav>
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<ul>
-				<li><a href="Niagara.html">Niagara Falls</a></li>
-				<li><a href="cntower.html">The CN Tower</a></li>
-				<li><a href="parliament.html">Parliament Hill</a></li>
-				<li><a href="fort.html">Fort Willian Historical Park</a></li>
-				<li><a href="algonquin.html">Algonquin Park</a></li>
-				<li><a href="river.html">Ottawa River Rafting</a></li>
-				<li><a href="caves.html">Bonnechere Caves</a></li>
-				<li><a href="bruce.html">Bruce Peninsula</a></li>
-				<li><a href="hamilton.html">Hamilton Waterfalls</a></li>
-				<li><a href="mandir.html">BAPS Shri Swaminarayan Mandir</a></li>
-			</ul>
-		</nav>
 		<article>
+			<div id="mainnav" class="scrollmenu">
+				<a href="index.html">Home <i class="fa fa-home" style="color:white;"></i></a>
+				<div class="dropdown">
+					<button class="dropbtn">Dropdown
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="Niagara.html">Niagara Falls</a>
+						<a href="cntower.html">The CN Tower</a>
+						<a href="parliament.html">Parliament Hill</a>
+						<a href="fort.html">Fort Willian Historical Park</a>
+						<a href="algonquin.html">Algonquin Park</a>
+						<a href="river.html">Ottawa River Rafting</a>
+						<a href="caves.html">Bonnechere Caves</a>
+						<a href="bruce.html">Bruce Peninsula</a>
+						<a href="hamilton.html">Hamilton Waterfalls</a>
+						<a href="mandir.html">BAPS Shri Swaminarayan Mandir</a>
+					</div>
+				</div>
+				<a href="contact.html">Contact Us <i class="fa fa-address-card" style="color: rgb(196, 118, 216);"></i></a>
+			</div>
 			<div class="container">
 				<div class="row">
 					<div id="content-item">

@@ -2,6 +2,8 @@
 var modal = document.getElementById('id01');
 var modal2 = document.getElementById('id02');
 var comm = document.getElementById("comm");
+var navbar = document.getElementById("mainnav");
+var sticky = navbar.offsetTop;
 var emptyC = false;
 
 var $ = function (id) {
@@ -114,14 +116,6 @@ function logout() {             // logout just clears the sessionStorage variabl
     }
 }
 
-function openNav() {
-    document.querySelector("nav").style.width = "250px";
- }
-
-function closeNav() {
-  document.querySelector("nav").style.width = "0";
- }
-
 window.onclick = function (event) { // onclick events
     let text = $("text").value;
     text=text.trim();
@@ -159,6 +153,16 @@ window.onload = function () {       // onload events
     }   
 }
 
+function stick() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+}
+  
+window.onscroll = function() {stick()};
+
 document.onreadystatechange = function(e)
 {
     if (document.readyState === 'complete')
@@ -169,6 +173,8 @@ document.onreadystatechange = function(e)
             $("logButton").innerHTML += "<button id=\"out\" onclick=\"logout();\">Logout</button>";
         }    
     }
+
+    
 };
 
 
