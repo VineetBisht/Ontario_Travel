@@ -94,7 +94,6 @@ function login() {              // Function to check login
         if ( e.fname.toUpperCase() == temp_u.toUpperCase() && e.pass.toUpperCase() == temp_psw.toUpperCase()) {
             sessionStorage.setItem("verified", "true");
             sessionStorage.setItem("uname", e.fname);
-            console.log(e.fname + "+" + temp_u);
             break;
         }
     };
@@ -155,8 +154,8 @@ window.onload = function () {       // onload events
 
 function stick() {
     if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
+      navbar.classList.add("sticky");
+     } else {
       navbar.classList.remove("sticky");
     }
 }
