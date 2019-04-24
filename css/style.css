@@ -414,22 +414,33 @@ span.psw {
   color: #ffe493;
 }
 
+#logButton {
+  order: 4;
+  display: inline-flex;
+  width: 100%;
+  flex-direction: row;
+  max-width: 250px;
+}
+
 #logButton>h4 {
-  float: right;
-  display: inline;
   font-family: 'Pacifico', Helvetica, sans-serif;
   font-size: 80%;
-  color: #0a3d25;
-  text-shadow: .5px .5px 0px white;
+  color: white;
+  text-shadow: 2.5px 2.5px 0px #8f3942;
   margin: 0px;
-  margin-right: 20px;
+  margin-right: 25px;
+  margin-top: 10px;
   width: 200px;
+}
+
+#logButton button{
+  margin:2.5px; 
 }
 
 #out {
   position: absolute;
   right: 5%;
-  top: 20%;
+  top: 25%;
   display: inline;
   background: white;
   color: black;
@@ -557,4 +568,47 @@ span.psw {
 .cntr{
   margin-right:5px;
   margin-top:5px;
+}
+
+
+#map_drop {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 5px;
+  margin-right: 50px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+#map_drop>p {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 15px;
+  margin-right: 10px;
+  font-size: 70%;
+  color: #f99dba;
+}
+
+#map_drop>img {
+  height: 50px;
+  width: 50px;
+  border: none;
+  margin: 0px;
+  margin-right: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  z-index: 1;
+}
+
+#map_drop:hover .dropdown-content {
+  display: flex;
+  cursor: auto;
 }

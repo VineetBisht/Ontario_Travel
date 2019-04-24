@@ -597,6 +597,10 @@ span.psw {
     width: 200px;
 }
 
+#logButton button{
+    margin:2.5px; 
+}
+
 #out {
     background: white;
     font-style: italic;
