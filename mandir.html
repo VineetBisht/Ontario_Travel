@@ -20,7 +20,7 @@
                 <p><u>Map:</u></p>
                 <img src="images/map_icon.png">
                 <div class="dropdown-content">
-                    <map name="image-map" >
+                    <map name="image-map">
                         <area target="" alt="" title="" href="#" shape="poly" coords="237,438,235,418,243,405,253,408,256,413">
                         <area alt="" title="" href="#" shape="poly" coords="646,495,630,506,637,521,655,523,671,524" />
                         <area alt="" title="" href="#" shape="poly" coords="591,527,612,523,630,538,620,549,596,551,589,541" />
@@ -38,7 +38,6 @@
                     <button onclick="document.getElementById('id02').style.display='block'">Sign Up</button>
                     <button onclick="document.getElementById('id01').style.display='block'">Login</button>
                 </div>
-                <input type="text" id="here" placeholder="Type keyword to search...">
             </div>
         </div>
         <div id="heading">
@@ -49,24 +48,33 @@
     <section>
         <article>
             <div id="mainnav" class="scrollmenu">
-                <a href="index.html">Home <i class="fa fa-home" style="color:white;"></i></a>
-                <div class="dropdown">
-                    <button class="dropbtn">Dropdown <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="Niagara.html">Niagara Falls</a>
-                        <a href="cntower.html">The CN Tower</a>
-                        <a href="parliament.html">Parliament Hill</a>
-                        <a href="fort.html">Fort Willian Historical Park</a>
-                        <a href="algonquin.html">Algonquin Park</a>
-                        <a href="river.html">Ottawa River Rafting</a>
-                        <a href="caves.html">Bonnechere Caves</a>
-                        <a href="bruce.html">Bruce Peninsula</a>
-                        <a href="hamilton.html">Hamilton Waterfalls</a>
-                        <a href="mandir.html">BAPS Shri Swaminarayan Mandir</a>
+                <div id="leftnav">
+                    <a href="index.html">Home <i class="fa fa-home" style="color:white;"></i></a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Places <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="algonquin.html">Algonquin Park</a>
+                            <a href="mandir.html">BAPS Shri Swaminarayan Mandir</a>
+                            <a href="caves.html">Bonnechere Caves</a>
+                            <a href="bruce.html">Bruce Peninsula</a>
+                            <a href="fort.html">Fort Willian Historical Park</a>
+                            <a href="hamilton.html">Hamilton Waterfalls</a>
+                            <a href="Niagara.html">Niagara Falls</a>
+                            <a href="river.html">Ottawa River Rafting</a>
+                            <a href="parliament.html">Parliament Hill</a>
+                            <a href="cntower.html">The CN Tower</a>
+                        </div>
+                    </div>
+                    <a href="contact.html">Contact Us <i class="fa fa-address-card" style="color: rgb(196, 118, 216);"></i></a>
+                </div>
+                <div class="cntr">
+                    <div class="cntr-innr">
+                        <label class="search" for="inpt_search">
+                            <input id="inpt_search" type="text" onblur="onBlur()" onfocus="onFocus()" />
+                        </label>
                     </div>
                 </div>
-                <a href="contact.html">Contact Us <i class="fa fa-address-card" style="color: rgb(196, 118, 216);"></i></a>
             </div>
             <div>
                 <a href="bruce.html"><img src="images/back_b.png" id="back_button" width=100 height=100></a>
@@ -280,7 +288,7 @@
             All rights Reserved.</p>
         <a href="contact.html">Contact Us</a><br>
         <a href="https://github.com/VineetBisht/Ontario_Travel">GitHub Source</a>
-        <p><a href="#here"><u>Back to top</u></a></p>
+        <p><a href="#header_right"><u>Back to top</u></a></p>
     </footer>
     <div id="id01" class="modal">
         <form class="modal-content animate">

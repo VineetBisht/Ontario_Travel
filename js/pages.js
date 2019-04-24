@@ -161,6 +161,15 @@ function stick() {
     }
 }
   
+function onBlur() {
+    document.getElementById("inpt_search").parentNode.classList.remove("active");  
+}
+
+
+function onFocus(){
+    document.getElementById("inpt_search").parentNode.classList.add("active");
+}
+
 window.onscroll = function() {stick()};
 
 document.onreadystatechange = function(e)
