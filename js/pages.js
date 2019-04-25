@@ -81,10 +81,9 @@ var regisTer = function () {        // Form validation check function
     }
     else { $("last_name_error").innerHTML = ""; }
 
-    if (isValid) {
-        // submit the form if all entries are valid
-        $("signup_form").submit();
-    }
+    $("success2").innerHTML = "Successfully Registered";
+    console.log('here');    
+
 }
 
 function login() {              // Function to check login
@@ -116,11 +115,11 @@ function logout() {             // logout just clears the sessionStorage variabl
 }
 
 window.onclick = function (event) { // onclick events
-    let text = $("text").value;
-    text=text.trim();
-    
+   
      if (event.target === comm) {
-
+        let text = $("text").value;
+        text=text.trim();
+        
         if(sessionStorage.getItem("uname")==null){
             alert("You must login first");
             return false;
