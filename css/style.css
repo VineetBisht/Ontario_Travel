@@ -563,36 +563,3 @@ span.psw {
   margin-right:5px;
   margin-top:5px;
 }
-
-#map_drop {
-  display: flex;
-  flex-direction: row;
-  margin: 0px;
-  padding: 0px;
-  margin-top: 5px;
-  margin-right: 50px;
-  margin-left: auto;
-  cursor: pointer;
-}
-
-#map_drop>p {
-  padding: 0px;
-  margin: 0px;
-  margin-top: 15px;
-  margin-right: 10px;
-  font-size: 70%;
-  color: #f99dba;
-}
-
-#map_drop>img {
-  height: 50px;
-  width: 50px;
-  border: none;
-  margin: 0px;
-  margin-right: 10px;
-}
-
-#map_drop:hover .dropdown-content {
-  display: flex;
-  cursor: auto;
-}

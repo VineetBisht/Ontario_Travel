@@ -1,0 +1,43 @@
+[
+    {},
+    {
+        "name": "Algonquin Park",
+        "url": "algonquin.html"
+    },
+    {
+        "name": "BAPS Shri Swaminarayan Mandir",
+        "url": "mandir.html"
+    },
+    {
+        "name": "Bonnechere Caves",
+        "url": "caves.html"
+    },
+    {
+        "name": "Bruce Peninsula",
+        "url": "bruce.html"
+    },
+    {
+        "name": "Fort William Historical Park",
+        "url": "fort.html"
+    },
+    {
+        "name": "Hamilton Waterfalls",
+        "url": "hamilton.html"
+    },
+    {
+        "name": "Niagara Falls",
+        "url": "Niagara.html"
+    },
+    {
+        "name": "Ottawa River Rafting",
+        "url": "river.html"
+    },
+    {
+        "name": "Parliament Hills",
+        "url": "parliament.html"
+    },
+    {
+        "name": "The CN Tower",
+        "url": "cntower.html"
+    }
+]
